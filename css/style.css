@@ -227,6 +227,7 @@ img {
     background-color: rgba(0, 0, 0, 0.2);
     top: 0px;
     left: 0px;
+    transition: opacity ease 1s;
 }
 
 .hero-modal-window {
