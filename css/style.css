@@ -69,6 +69,12 @@ img {
       margin-bottom: 50px;
   }
 
+.is-hidden {
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+}
+
 /* Header */
 
 .header-container {
@@ -212,6 +218,51 @@ img {
 .hero-button:focus {
     color: var(--accent-color);
     background-color: var(--accent-dark-color);
+}
+
+.hero-modal-container {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    top: 0px;
+    left: 0px;
+}
+
+.hero-modal-window {
+    width: 528px;
+    height: 581px;
+    margin-top: 221px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--secondary-title-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+
+.modal-close-link {
+    width: 30px;
+    height: 30px;
+    background-color: var(--secondary-title-color);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+    margin-left: 490px;
+}
+
+.modal-close-link:hover,
+.modal-close-link:focus {
+    background-color: var(--accent-color);
+    color: var(--secondary-title-color);
+}
+
+.modal-close-icon {
+    fill: currentColor;
 }
 
 /* Features */
